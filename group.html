@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face{
+font-family: mathias;
+src: url(futura.woff);
+}
+</style>
+<meta charset="UTF-8"/>
+<link rel="font" href="fon/futura.ttf">
+</head>
+<body id="wewcor">
+<title>ΜΔŦĦƗΔŞ777 - ŁƗV€ØĆỮŇŦ</title>
+<link rel="icon" href="img/conar.ico">
+<link rel="font" href="fon/futura.ttf">
+<link rel="stylesheet" type="text/css" href="css/livecount.css" />
+<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/group.js"></script>
+<script src="js/odometer.js"></script>
+<script src="js/sweetalert.js"></script>
+<button onclick="sonsetting()" id="soundstting" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 30%;
+  border: 0;
+  margin-left: 3%;
+  padding: 10px;
+  font-family: mathias;
+  color: #FFFFFF;
+  font-size: 30px;
+   transform: translateX(-10%);
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  box-shadow: rgba(0, 0, 0, 0.91) 9px 10px 20px 0px;
+  cursor: pointer;" type="button" >sound : OFF</button><button onclick="window.location.href='postGAP.html'" id="bouto9" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #00ffad;
+  width: 13%;
+  border: 0;
+  margin-left: -2%;
+  transform: translateY(-35%);
+  font-family: mathias;
+  padding: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.91);
+  " type="button" >post battle</button><button onclick="window.location.href='livemedia.html'" id="bouto7" style="
+  text-transform: uppercase;
+  outline: 0;
+  font-family: mathias;
+  background: #00ffad;
+  width: 18%;
+  border: 0;
+  margin-left: 1%;
+  transform: translateY(-35%);
+  padding: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.91);
+  " type="button" >media livecount</button><button onclick="blocked()" id="bouto6" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffa7a7;
+  width: 23%;
+  border: 0;
+  font-family: mathias;
+  margin-left: 1%;
+  transform: translateY(-35%);
+  padding: 6px;
+  color: #f50000;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.91);
+  " type="button" >dont update/stuck ?</button><button onclick="contact()" id="bouto8" style="
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #2200FF;
+  font-family: mathias;
+  width: 12%;
+  border: 0;
+  margin-left: 1%;
+  transform: translateY(-32%);
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: 20px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.91);
+  " type="button" >contact</button>
+<div id="featureduser">
+</div><br>
+
+<div class="post">
+   <br><br><img src="img/mathias777.jpg" id="pfp" alt="ima de prifile mai bon la" style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border: solid blue 4px;
+  box-shadow: 13px 15px 38px -9px rgba(0,0,0,0.91);">
+<h1 id="coconu" onclick="gotoprofile()" style="
+    color: white;
+	text-align: center;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+	font-family: mathias;
+">mathias777 total highlight</h1>
+<div class="followers" id="post-text">
+<h1 id="folower" style="
+    color: white;
+	text-align: center;
+	line-height: 0;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">highlight :</h1>
+<div name="leposte" style="font-size: 150px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="dega" class="odometer">0</div>
+</div>
+<div style="display: flex;text-align: center">
+<div class="post" id="post-text" style="
+    width: 33%;
+">
+<div class="followers" id="gen1">
+<img src="img/mathias777.jpg" id="imad1" style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext1" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">santourianmathias:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou1" class="odometer">0</div>
+</div>
+</div>
+<!---->
+<div class="post" id="post-text" style="
+    width: 33%;
+	margin-left: 1%;
+">
+<div class="followers" id="gen2">
+<img src="img/mathias777.jpg" id="imad2" name='seipai' style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext2" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">mathiassantoutou777:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou2" class="odometer">0</div>
+</div>
+</div>
+<!---->
+<div class="post" id="post-text" style="
+    width: 33%;
+	margin-left: 1%;
+">
+<div class="followers" id="gen3">
+<img src="img/mathias777.jpg" id="imad3" style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext3" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">51.6m:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou3" class="odometer">0</div>
+</div>
+</div>
+</div>
+<!--section 2-->
+<div style="display: flex;text-align: center">
+<div class="post" id="post-text" style="
+    width: 33%;
+">
+<div class="followers" id="gen4">
+<img src="img/mathias777.jpg" id="imad4" style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext4" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">mal4mute:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou4" class="odometer">0</div>
+</div>
+</div>
+<!---->
+<div class="post" id="post-text" style="
+    width: 33%;
+	margin-left: 1%;
+">
+<div class="followers" id="gen5">
+<img src="img/mathias777.jpg" id="imad5" name='seipai' style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext5" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">mathias_qui_poste:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou5" class="odometer">0</div>
+</div>
+</div>
+<!---->
+<div class="post" id="post-text" style="
+    width: 33%;
+	margin-left: 1%;
+">
+<div class="followers" id="gen6">
+<img src="img/mathias777.jpg" id="imad6" style="
+    width: 40%;
+    margin-top: 3%;
+    border: solid 1px;
+">
+<h1 id="gentext6" style="
+    color: white;
+    text-align: center;
+    line-height: 0;
+    font-family: mathias;
+    text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+    font-size: 27px;
+">_4_4__4_:</h1>
+<div name="leposte" style="font-size: 50px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="cou6" class="odometer">0</div>
+</div>
+</div>
+</div>
+<div style="
+display: flow-root;" id="backcredit">
+<h1 id="autre3"  style="
+    color: black;
+    text-align: center;
+    font-size: 30px;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">this livecount is owned by mathias777</h1>
+</div>
+</body>

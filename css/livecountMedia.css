@@ -1,0 +1,280 @@
+:root{
+  /* linear-gradient(DEGREE, START COLOR, END COLOR, ECT...*/
+  --transsecond: 4s;
+  --livecountdiv_background: #11111122;
+  --livecountdiv_borders: solid 2px #11111122;
+  --darkmode_background: black;
+  --feature_button: rgb(153, 160, 79);
+  --lightmode_background: linear-gradient(217deg, rgba(166, 55, 55, 0), rgba(255,0,0,0)), 
+    linear-gradient(127deg, rgba(255, 115, 9, 0.8), rgba(0,255,0,0)),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.92), rgba(0,0,255,0));
+}
+@keyframes mathias{
+  from{
+    border: solid blue;
+  }
+  to{
+    border: solid skyblue;
+  }
+}
+
+@keyframes mathias2{
+  from{
+    border: solid gray;
+  }
+  to{
+    border: solid darkgray;
+  }
+}
+
+@keyframes mathias_friend{
+  from{
+    border: solid green;
+  }
+  to{
+    border: solid rgb(62, 255, 62);
+  }
+}
+
+@font-face{
+font-family: mathias;
+src: url(futura.woff);
+}
+button {
+transition: all 0.1s;
+}
+header{
+  text-align: center;
+}
+body {
+	background: var(--lightmode_background);
+  background-attachment: fixed;
+  /* margin: 0; */
+}
+p{
+  font-size: 30px;
+  font-family: mathias;
+}
+#lec{
+	 border : solid black 1px;
+	 width: 99.4%;
+	 height : 30px;
+}
+.Lcount{
+  font-size: 100px;
+  line-height: 1em;
+  display: unset;
+  font-family: mathias;
+}
+#featureduser{
+  text-align: center;
+}
+.lctext{
+  color: white;
+  text-align: center;
+  line-height: 0;
+  font-family: mathias;
+}
+.lctext[id=coconu]{
+  line-height: 1;
+}
+#bijouer {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white; 
+}
+h1[eid=title]{
+  color: white;
+  text-align: center;
+  font-family: mathias;
+}
+.topbuttons{
+  font-family: mathias;
+  text-transform: uppercase;
+  outline: 0px;background: rgba(196, 194, 196, 0.6);
+  border: 4px solid rgba(255, 255, 255, 0.47);
+  padding: 5px;color: rgb(255, 255, 255);
+  font-size: 30px;cursor: pointer;
+  transform: translate(0px, 0px);
+}
+.odometer {
+	position: relative;
+	font-family: mathias;
+	font-size: 70px;
+	font-weight: 600;
+	color: white;
+  position: absolute;
+	width: 100%;
+  margin-top: 30px;
+  text-align: center;
+	line-height: 1em;
+  display: unset;
+}
+
+#wow {
+	background-color: #11111122;
+}
+p[id=textcount]{
+  font-size: 40px;
+  margin: 5px;
+}
+.ratebox{
+  text-align: center;
+  font-family:mathias;
+  font-weight:600;
+  background: rgba(255, 255, 255, 0.52);
+  width: 60%;
+  margin: auto;
+  height: 110px;
+}
+.ratebox > p{
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.ratebox > div{
+  display: inline-flex;
+  width: 60%;
+}
+.columncounts2{
+  width: 50%;
+  font-family: mathias;
+  margin: auto;
+}
+.soundbutton{
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 30%;
+  border: 0;
+  padding: 10px;
+  font-family: mathias;
+  color: #FFFFFF;
+  font-size: 30px;
+  cursor: pointer;
+}
+h1[id=text]{
+  color: white;
+  text-align: center;
+  font-family: mathias;
+  font-size: 30px;
+}
+.rateeditbuttons{
+    transform: translate(0px, 0px);
+    border: 0px;
+    width: 40%;
+    font-size: 42px;
+    margin: auto;
+    height: 50px;
+    font-family: mathias;
+    background: rgba(255, 0, 7, 0.42);
+    font-weight: 600;
+}
+.rateeditbuttons[id=increaserate]{
+  background: rgba(0, 255, 7, 0.42);
+}
+.userbuttons{
+  text-transform: uppercase;
+  font-family: mathias;
+  background: var(--feature_button);
+  border: 0;
+  margin: 1%;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 25px;
+  cursor: pointer;
+}
+.leuseu {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+   font-family: mathias;
+}
+#lable1 {
+	font-size: 20px;
+	font-family: mathias;
+}
+.bouto1 {
+	position: top;
+	font-family: mathias;
+}
+
+.follower, .leposte, #post-text, #followin, #autre {
+	margin-bottom: 5px;
+	border : var(--livecountdiv_borders);
+	background : var(--livecountdiv_background);
+}
+
+.modebox{
+    background: rgba(255, 255, 255, 0.49);
+    height: 80px;
+    width: 49%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#usernamer, .textinputuser {
+    font-family: mathias;
+    background: #ffffff59;
+    width: 90%;
+    border: solid #ffffff54;
+    color: white;
+    margin: 0px 0 15px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+h1, button{
+	font-family: mathias;
+}
+#countsRow2{
+  display: flex;
+}
+/*odometers style*/
+#odometer{
+  font-size: 70px;
+  line-height: 1em;
+  display: unset;
+  font-family: mathias;
+}
+#odometer2, #odometer3, #odometer4 {
+  font-size: 85px;
+  line-height: 1em;
+  display: unset;
+  font-family: mathias;
+}
+#odometer5{
+  margin-top: 0;
+}
+@media screen and (max-width: 1080px), screen and (aspect-ratio: 16/9){
+  .columncounts2{
+    width: auto;
+  }
+  #countsRow2{
+    display: block;
+  }
+  #odometer{
+    font-size: 20vw !important;
+  }
+  #odometer5{
+    font-size: 15vw !important;
+  }
+  .topbuttons{
+    font-size: 4.5vw;
+  }
+  p{
+    font-size: 6vw;
+    font-family: mathias;
+  }
+  .soundbutton{
+    width: 45%;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/livecount.css" />
+  <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="description" content="Hashtag livecount for instagram!, live post count" />
+  <meta name="keywords" content="instagram livecount, instagram hashtag, realtime, hashtag, post, livecount" />
+  <meta name="author" content="mathias777" />
+  <title>instagram livecount - hashtag</title>
+  <script src="js/hashtag.js"></script>
+  <script src="js/odometer.js"></script>
+  <script src="js/sweetalert.js"></script>
+</head>
+<body id="wewcor">
+  <div style='text-align: center;'>
+    <button bid="EV1" class="topbuttons" style="width: 15%;">back</button>
+    <button bid="EV2" class="topbuttons" style="width: 30%;">media livecount</button>
+    <button bid="EV6" class="topbuttons" style="width: 35%;">profile livecount</button>
+    <button bid="EV4" class="topbuttons" style="width: 15%;">battle</button>
+</div>
+<br>
+<form name="lel" style="text-align: center;" onsubmit="tpjland()" >
+  <input type="text" id="usernamer" name="IGhashtag" required placeholder="hashtag"/>
+</form>
+	<script>
+	function tpjland(){
+  	event.preventDefault()
+  	hashtag = document.getElementById("usernamer").value
+    user_pref.setItem("last_hashtag", hashtag)
+  	CULER.open('GET', "https://www.instagram.com/explore/tags/" + hashtag + "/?__a=1");
+  	CULER.send(null)
+	}
+	</script>
+<div class="post">
+  <img src="img/0.jpg" id="pfp" alt="hashtag icon" style="display: block;margin-left: auto;margin-right: auto;width: 200px;border: solid;">
+  <h1 id="coconu" onclick="gotoprofile()" style="color: white;text-align: center;font-family: mathias;">...</h1>
+  <div class="followers" id="post-text">
+    <h1 id="folower" style="color: white;text-align: center;line-height: 0;font-family:mathias;">posts :</h1>
+    <div name="leposte" style="font-size: 150px; line-height: 1em; display: unset;font-family: mathias;" id="odometer" class="odometer">0</div>
+  </div>
+</div>
+<div style="text-align:center;margin-top:20px">
+<button onclick="sonsetting()" id="soundstting" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 30%;
+  border: 0;
+  margin-left: 3%;
+  padding: 10px;
+  font-family: mathias;
+  color: #FFFFFF;
+  font-size: 30px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  box-shadow: rgba(0, 0, 0, 0.91) 9px 10px 20px 0px;
+  cursor: pointer;" type="button" >sound : OFF</button>
+</div>
+<div style="display: flow-root;" id="backcredit">
+  <h1 id="autre3"  style="color: black;text-align: center;font-size: 30px;font-family: mathias;">this livecount is owned by mathias777</h1>
+</div>
+<script>
+$('button').mousedown(function(){
+$(this).css({"-webkit-transform":"translate(4px, 4px)"})
+})
+$('button').mouseup(function(){
+$(this).css({"-webkit-transform":"translate(0px, 0px)"})
+})
+</script>
+<script src="js/main_event.js"></script>
+</body>

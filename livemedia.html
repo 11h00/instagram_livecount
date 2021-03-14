@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/livecountMedia.css" />
+  <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="description" content="Live media livecount for instagram, live view, like, comments" />
+  <meta name="keywords" content="instagram livecount, realtime, post,instagram like , livecount, media livecount" />
+  <meta name="author" content="mathias777" />
+  <title>instagram livecount</title>
+  <script src="js/livemedia.js"></script>
+  <script src="js/odometer.js"></script>
+  <script src="js/sweetalert.js"></script>
+</head>
+<body id="wewcor">
+  <div style='text-align: center;'>
+      <button bid="EV1" class="topbuttons" style="width: 15%;">back</button>
+      <button bid="EV6" class="topbuttons" style="width: 35%;">profile livecount</button>
+      <button bid="EV3" class="topbuttons" style="width: 30%;">hashtags post</button>
+      <button bid="EV4" class="topbuttons" style="width: 15%;">battle</button>
+    </div>
+  <h1 id="non" style="color: white;text-align: center;">instagram livecount by mathias777 for mathias777 :)</h1>
+  <div id="featureduser">
+  <form name="lel" onsubmit="tpjland()">
+    <input type="text" id="usernamer" name="IGmedia_id" required placeholder="video ID ex = Btx5ia9jks5"/>
+  </form>
+  <script>
+  function tpjland(){
+    event.preventDefault()
+    videoID = document.getElementById("usernamer").value
+    user_pref.setItem("last_media", videoID);
+   CULER.open('GET', 'https://www.instagram.com/p/' + videoID + '/?__a=1');
+    CULER.send(null);
+  }
+  </script>
+  <div class="post">
+    <div>
+      <img src="img/0.jpg" id="pfp" alt="ima de prifile mai bon la" style="width: 200px;border: solid;margin-bottom: 0px;">
+      <img src="img/0.jpg" id="pfp2" onclick="prifi()" alt="ima de prifile mai bon la" style="width: 200px;border: solid;margin-bottom: 0px;margin-left: 20%;">
+  	</div>
+    <h1 id="coconu" style="color: white;text-align: center;">...</h1>
+    <div class="followers" id="post-text">
+      <h1 id="folower" style="color: white;text-align: center;line-height: 0;">view :</h1>
+      <div id="odometer" style="font-size: 150px; line-height: 1;display: unset;" class="odometer">0</div>
+    </div>
+  </div>
+  <div class="follower" id="follower" style="width: 49%;position: absolute;">
+    <h1 id="folower" style="color: white;text-align: center;line-height: 0;">likes :</h1>
+    <div name="lefollower" id="odometer2" style="font-size: 160px; line-height: 1;display: unset;" class="odometer">0</div>
+  </div>
+  <div class="followein" id="followin" style="width: 48%;position: inherit;margin-left: 52%;">
+    <h1 id="folower" style="color: white;text-align: center;line-height: 0;">comment :</h1>
+    <div name="lefollowin" id="odometer3" style="font-size: 160px; line-height: 1;display: unset;" class="odometer">0</div>
+  </div>
+  <div style="text-align:center">
+    <button onclick="sonsetting()" id="soundstting" class="soundbutton">sound : OFF</button>
+  </div>
+  <img src="img/sole.png" id="sole" alt="theme button" style="width: 60px;">
+</body>
+<script src="js/main_event.js"></script>
+<script>
+$("#buttonmethod1").click(function(){
+	methoddemerde = 1
+	$("#buttonmethod2").css('background', "rgba(255, 0, 0, 0.42)");
+	$("#buttonmethod1").css('background', "rgba(0, 255, 0, 0.42)");
+})
+$("#buttonmethod2").click(function(){
+	methoddemerde = 0
+	$("#buttonmethod1").css('background', "rgba(255, 0, 0, 0.42)");
+	$("#buttonmethod2").css('background', "rgba(0, 255, 0, 0.42)");
+})
+</script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/livecount.css" />
+	<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="description" content="The best instagram livecount you ever seen! battle, fast refresh, media livecount and more!" />
+	<meta name="keywords" content="instagram livecount, realtime, followers, follower, livecount" />
+	<meta name="author" content="mathias777" />
+	<meta name="robots" content="index, follow">
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="instagram livecount" />
+	<meta property="og:description" content="The best instagram livecount you ever seen! battle, fast refresh, media livecount and more!" />
+	<title>instagram livecount</title>
+	<script src="js/livecount_object.js"></script>
+	<script src="js/livecount.js"></script>
+	<script src="js/odometer.js"></script>
+	<script src="js/sweetalert.js"></script>
+</head>
+
+<body id="wewcor" onload="checkcookie()">
+	<header>
+		<button bid="EV1" class="topbuttons" style="width: 15%;">back</button>
+		<button bid="EV2" class="topbuttons" style="width: 35%;">media livecount</button>
+		<button bid="EV3" class="topbuttons" style="width: 30%;">hashtags post</button>
+		<button bid="EV4" class="topbuttons" style="width: 15%;">battle</button>
+	</header>
+	<main role="main">
+		<h1 eid="title">instagram livecount by mathias777</h1>
+		<div class="ratebox">
+			<p>refresh rate :</p>
+			<div>
+				<button class="alermotod rateeditbuttons" id="increaserate">+</button>
+				<p id="textcount">5</p>
+				<button class="alermotod rateeditbuttons" id="decreaserate">-</button>
+			</div>
+		</div>
+		<br>
+		<form style="text-align: center;" onsubmit="tpjland()">
+			<input type="text" id="usernamer" class="textinputuser" name="leuseu" required placeholder="username" />
+		</form>
+		<script>
+			function tpjland() {
+				event.preventDefault()
+				useuname = document.getElementById('usernamer').value;
+				swal.fire({
+					title: "new instagram username set:",
+					text: useuname,
+					toast: true,
+					animation: null,
+					position: 'top',
+					allowEscapeKey: false,
+					showConfirmButton: false,
+					timer: 3000
+				})
+				user_pref.setItem("last_user", useuname);
+				CULER.open('GET', livecount.GetRequestUrl(useuname));
+				CULER.send(null);
+			}
+		</script>
+		<section>
+			<article>
+				<img src="img/0.jpg" id="pfp" onclick="gotoprofile()" alt="ima de prifile mai bon la"
+					style="display: block;margin-left: auto;margin-right: auto;width: 200px;border: solid 3px black;">
+				<p id="coconu" onclick="gotoprofile()" class="lctext">...</p>
+				<div class="autre" id="autre" style="font-family: mathias;margin: auto;margin-bottom: 5px;">
+					<p id="followeur" class="lctext">followers :</p>
+					<div style="font-size: 150px; line-height: 1em; display: unset;font-family: mathias"
+						id="odometer" class="odometer">0</div>
+					<p id="milestona" class="lctext">left for </p>
+					<div id="odometer5" class="odometer">0</div>
+				</div>
+			</article>
+			<article id="countsRow2">
+				<aside class="follower columncounts2" id="follower">
+					<p id="posts" class="lctext">posts :</p>
+					<div id="odometer2" class="odometer">0</div>
+				</aside>
+				<aside class="followein columncounts2" id="followin">
+					<p id="folower" style="color: white;text-align: center;font-family: mathias;line-height: 0;">
+						following :
+					</p>
+					<div id="odometer3" class="odometer">0
+					</div>
+				</aside>
+			</article>
+
+			<article id="post-text">
+				<p id="autre2" style="color: white;text-align: center;line-height: 0;font-family: mathias;">highlight
+					storie :
+				</p>
+				<div id="odometer4" class="odometer">0</div>
+			</article>
+	</main>
+	<footer id="backcredit">
+		<div style="display: flex;justify-content: space-between;">
+			<button onclick="sonsetting()" class="soundbutton" id="soundstting">sound : OFF</button>
+			<img src="img/sole.png" id="sole" alt="light mode" style="width: 60px;">
+		</div>
+	</footer>
+	</section>
+	<script src="js/refresh_module.js"></script>
+	<script src="js/main_event.js"></script>
+</body>
